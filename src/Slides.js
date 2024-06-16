@@ -4,7 +4,7 @@ import './App.css';
 
 function Slides() {
   const [reason, setReason] = useState(0);
-  const { id, heading, image, description } = carousel[reason];
+  const { heading, image, description } = carousel[reason];
 
   const previousReason = () => {
     setReason((reason => {

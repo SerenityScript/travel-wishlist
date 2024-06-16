@@ -1,38 +1,234 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.Navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+}
+
+a:hover {
+  color: green;
+  background-color: rgb(232, 229, 229);
+  transition: .5s;
+}
+
+.Header {
+  font-family: "Oooh Baby", cursive;
+  font-size: 70px;
   text-align: center;
+  color: rgb(218, 2, 2);
+  background-color: green;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MainContainerSlides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SlidesCont {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: orange;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.Previous {
+  position: absolute;
+  left: 5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Next {
+  position: absolute;
+  right: 5em;
+}
+
+.Description {
+  text-align: center;
+  font-weight: 300;
+}
+
+.SlidesImg {
+  width: 800px;
+  height: 500px;
+}
+
+.Btn {
+  cursor: pointer;
+  background-color: orange;
+  border: 1px solid white;
+  width: 65px;
+  height: 65px;
+  border-radius: 100000%;
+}
+
+.Btn:hover {
+  background-color: #ffffffa6;
+  border: 1px solid orange;
+  transition: .5s;
+}
+
+.Par {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-family: "Poppins", sans-serif;
+}
+
+.City {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgb(232, 229, 229);
+  border-radius: 20px;
+}
+
+.City:hover {
+  background-color: orange;
+  transition: .5s;
+}
+
+.CityImg {
+  width: 360px;
+  height: 440px;
+}
+
+h2 {
+  letter-spacing: 2px;
+  color: rgb(146, 55, 33);
+  font-size: 35px;
+}
+
+hr {
+  border: 3px dotted white;
+  width: 100%;
+}
+
+.BtnShow {
+  border: none;
+  background-color: transparent;
+  color: rgb(146, 55, 33);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.RemoveBtn {
+  cursor: pointer;
+  margin-top: auto;
+  padding: 7px 30px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background-color: rgb(146, 55, 33);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.RemoveBtn:hover {
+  background-color: rgb(200, 77, 47);
+  transition: .5s;
+}
+
+.DeleteAllBtn {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: rgb(146, 55, 33);
+  color: #fff;
+  padding: 15px;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.DeleteAllBtn:hover {
+  background-color: rgb(200, 77, 47);
+  transition: .5s;
+}
+
+@media all and (max-width: 1000px) {
+  .SlidesCont {
+    width: 90%;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .SlidesImg {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .Header {
+    font-size: 40px;
+  }
+  .Par {
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .SlidesCont {
+    width: 90%;
+    padding: 10px;
+  }
+  .SlidesImg {
+    width: 400px;
+    height: 280px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .SlidesImg {
+    width: 300px;
+    height: 190px;
+  }
+  .CityImg {
+    width: 300px;
+    height: 400px;
+  }
+  .Previous {
+    left: 1em;
+    top: 10rem;
+  }
+  .Next {
+    right: 1em;
+    top: 10rem;
   }
 }

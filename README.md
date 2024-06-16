@@ -22,7 +22,7 @@ This React application is a travel guide for Italy, showcasing must-visit cities
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/travel-wishlist.git
+    git clone https://github.com/SerenityScript/travel-wishlist.git
     cd travel-wishlist
     ```
 

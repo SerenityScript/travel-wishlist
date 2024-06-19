@@ -46,7 +46,7 @@ function Cities() {
               <h3>{heading}</h3>
               <img className="CityImg" src={image} alt={city} />
               <p>
-                {showMore ? description : `$description.substring(0, 110)...`}
+                {showMore ? description : description.substring(0, 110)+ '...'}
                 <button className="BtnShow" onClick={() => showTextClick(id)}>
                   {showMore ? "Show less" : "Show more"}
                 </button>
